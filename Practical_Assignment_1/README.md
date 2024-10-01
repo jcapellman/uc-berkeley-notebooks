@@ -2,7 +2,7 @@
 This notebook analyzes the results from the UCI Machine Learning on coupon acceptance.
 
 ## Notebook
-https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Practical_Assignment_1/prompt.ipynb
+https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Practical_Assignment_1/practical_assignment_1.ipynb
 
 ## Results
 Younger people who visit a bar more than once a month are the most likely to accept the coupon.
