@@ -7,4 +7,8 @@ The notebook linked below shows the analysis in detail.
 https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Practical_Assignment_3/practical_assignment_3.ipynb
 
 ## Results
-TBD
+                 Model  Train Time  Train Accuracy  Test Accuracy
+0  Logistic Regression    0.159100        0.848134       0.848992
+1                  KNN    0.010530        0.846586       0.832362
+2        Decision Tree    0.379105        0.871775       0.820102
+3                  SVM  104.263143        0.848194       0.848992
