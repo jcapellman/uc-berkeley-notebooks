@@ -1,32 +1,34 @@
-### Project Title
+### TCP Traffic Classification
 
-**Author**
+**Jarred Capellman**
 
 #### Executive summary
 
 #### Rationale
-Why should anyone care about this question?
+Given that nearly everyone on the planet browses the Internet, being able to quickly determine if the packets are malicious would help provide a safer browsing experience for all Internet users.
 
 #### Research Question
-What are you trying to answer?
+Can TCP traffic data from Chrome determine if the traffic is malicious or benign? 
 
 #### Data Sources
-What data will you use to answer you question?
+I found a great data source on Kaggle Links to an external site.that includes both benign and malicious labeled data. I can potentially use the Firefox data for an additional test set.
 
 #### Methodology
-What methods are you using to answer the question?
+I will likely use a Random Forest, Gradient Boost, and SVM for my analysis and propose the one with the highest accuracy.  In addition, I will try to reduce the feature space, if possible, by doing a feature importance analysis.
+
+I expect to be able to correctly classify traffic as either benign or malicious with> 50% accuracy. Training and Inference times I will not focus on given the focus on accuracy - however, I will note all the metrics in my analysis.
 
 #### Results
-What did your research find?
+##### EDA Results
+TBD
 
 #### Next steps
-What suggestions do you have for next steps?
+TBD
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [Exploratory Data Analysis Notebook](https://www.kaggle.com/datasets/peterfriedrich1/dns-test-traffic-dohbrw2020?resource=download)
 
 
 ##### Contact and Further Information
+- [Secure DNS Test Traffic DoHBrw-2020 Kaggle Dataset](https://www.kaggle.com/datasets/peterfriedrich1/dns-test-traffic-dohbrw2020?resource=download)
