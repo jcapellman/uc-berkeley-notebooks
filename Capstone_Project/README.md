@@ -27,7 +27,7 @@ TBD
 
 #### Outline of project
 
-- [Exploratory Data Analysis Notebook](https://www.kaggle.com/datasets/peterfriedrich1/dns-test-traffic-dohbrw2020?resource=download)
+- [Exploratory Data Analysis Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_eda.ipynb)
 
 
 ##### Contact and Further Information
