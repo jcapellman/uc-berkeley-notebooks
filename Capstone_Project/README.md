@@ -11,7 +11,7 @@ Given that nearly everyone on the planet browses the Internet, being able to qui
 Can TCP traffic data from Chrome determine if the traffic is malicious or benign? 
 
 #### Data Sources
-I found a great data source on Kaggle Links to an external site.that includes both benign and malicious labeled data. I can potentially use the Firefox data for an additional test set.
+I found a great data source on Kaggle Links to an external site.that includes both benign and malicious labeled data. I can potentially use the Firefox data for an additional test set. These data sets are 300mb each so I did not commit them to this repository.
 
 #### Methodology
 I will likely use a Random Forest, Gradient Boost, and SVM for my analysis and propose the one with the highest accuracy.  In addition, I will try to reduce the feature space, if possible, by doing a feature importance analysis.
