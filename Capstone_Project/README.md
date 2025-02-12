@@ -20,10 +20,17 @@ I expect to be able to correctly classify traffic as either benign or malicious 
 
 #### Results
 ##### EDA Results
-TBD
+Given the number of outliers was quite high at 7076, the data has a lot of diversity, making training a model challenging.
+
+Subsequent steps should include using Ray or another hyper-parameter tuning technique to lower the count, such as increasing the contamination parameter to 0.02 from 0.01. The feature selection, as shown in the plots, indicates not all features are important, so reducing the feature space is also a necessary step.
 
 #### Next steps
-TBD
+1. Data Preprocessing: Use outlier detection (e.g., Isolation Forest), impute missing values.
+2. Feature Engineering: Create interaction and polynomial features, scale, and normalize.
+3. Model Selection: Implement cross-validation, try ensemble methods.
+4. Hyperparameter Tuning: Utilize tools like Optuna, conduct grid/random search.
+5. Model Evaluation: Use multiple metrics, plot learning curves, conduct error analysis.
+6. Model Interpretability: Analyze feature importance, use SHAP values.
 
 #### Outline of project
 
