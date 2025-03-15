@@ -1,11 +1,10 @@
-### TCP Traffic Classification
+# Capstone Project
+## TCP Traffic Classification Final Report
 
-**Jarred Capellman**
+**By Jarred Capellman**
 
-#### Executive summary
-
-#### Rationale
-Given that nearly everyone on the planet browses the Internet, being able to quickly determine if the packets are malicious would help provide a safer browsing experience for all Internet users.
+#### Problem Statement
+Given that nearly everyone on the planet browses the Internet, being able to quickly determine if the packets being transferred from their laptops are malicious would help provide a safer browsing experience for all Internet users.
 
 #### Research Question
 Can TCP traffic data from Chrome determine if the traffic is malicious or benign? 
