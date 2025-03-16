@@ -32,6 +32,15 @@ The dataset used in this project was sourced from Kaggle and is titled **Secure 
 
 As noted below, the size of the data source was large, therefore it is not included in this repository.
 
+##### Data Sources Structure
+![Datasets](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/datasets.png)
+
+After downloading the datasets from Kaggle, I renamed the two files to **raw_benign.csv** and **raw_malicious.csv** to make my notebook clearer.
+
+Afterwards, as noted above and in the notebook the datasets were labeled and then combined into one csv, **combined_traffic.csv**.
+
+Lastly, after data cleaning was performed the DataFrame was exported to a csv, **cleaned_data.csv** to avoid having to re-run the numerous steps repeatedly.
+
 ##### Key Features of the Dataset:
 
 1. **Size and Scope:**
