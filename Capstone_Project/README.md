@@ -45,6 +45,8 @@ This project leverages a dataset titled "Secure DNS Test Traffic DoHBrw-2020" so
 The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques; however, the Confusion Matrix shows how well each model performed for the summary findings.
 
 #### Logistic Regression
+Logistic Regression is a simple yet effective model for binary classification tasks. The confusion matrix for Logistic Regression is shown below:
+
 ![Logistic Regression Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_logistic_regression.png)
 
 - **Accuracy:** The Logistic Regression model achieved a good overall accuracy, correctly classifying a substantial portion of the TCP traffic data.
@@ -52,6 +54,8 @@ The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-be
 - **F1 Score:** The F1 score balances precision and recall, providing a single metric to evaluate the model's performance. The cross-validated and mean F1 scores are depicted in the graphs below.
 
 #### Random Forest
+Random Forest is an ensemble learning method known for its robustness and ability to handle imbalanced datasets. The confusion matrix for Random Forest is shown below:
+
 ![Random Forest Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_random_forest.png)
 
 - **Accuracy:** The Random Forest model outperformed Logistic Regression in terms of accuracy, correctly classifying a higher percentage of the TCP traffic data.
