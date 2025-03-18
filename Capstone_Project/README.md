@@ -6,17 +6,52 @@
 #### Executive summary
 **Project overview and goals:**
 
+
 **Findings:**
+---
+
+The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques; however, the Confusion Matrix shows how well each of the models performed for the summary findings.
+
+#### Logistic Regression
+![Logistic Regression Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_logistic_regression.png)
+
+#### Random Forest
+![Random Forest Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_random_forest.png)
+
+#### SVM
+![SVM Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_svm.png)
+
 
 **Results and conclusion:**
+---
+
+As shown above, in the Confusion Matrix graphics, the SVM model correctly classified the holdout test set with 0 false positives and 0 false negatives. The model training time was about 2X the time, however the model performance which was the highest priority, SVM was the clear modelling choice.
+
 
 **Future research and development:**
+---
+1. **Validate Generalization**:
+   Ensure the performance isn't specific to the current Kaggle dataset. Use additional testing on unseen data (e.g., another holdout set or external validation dataset) to confirm the model's ability to generalize.
+   - Consider cross-validation with more folds to robustly verify performance consistency across different subsets of the data as opposed to the 2 folds used in this research.
 
-**Next steps and recommendations:**
+2. **Analyze the Data**:
+   - Investigate the dataset to ensure no data leakage (e.g., features that unintentionally provide direct information about the target). Data leakage could artificially inflate performance.
+   - Identify class distributions and ensure the model performs equally well across all classes, especially if the dataset is imbalanced.
+
+3. **Measure Computational Efficiency**:
+   - Check the time and resource costs of training and inference. If the model is expensive to train or deploy, consider simplifying it by reducing the dimensionality (e.g., Principal Component Analysis, feature selection) or using a faster approximation model (like LinearSVC).
+
+4. **Explainability**:
+   - Since SVMs can sometimes be treated as a "black box," techniques to improve interpretability should be considered. For instance, look into the support vectors and weights of the model to understand which data points and features drive predictions.
+
+5. **Continuous Evaluation**:
+   - Plan for monitoring the model over time if used in production. Data drifts (changes in the underlying data distribution) could reduce accuracy, so consider creating a pipeline for periodic retraining and validation.
+
+---
 
 #### Rationale
 
-Nearly everyone uses the internet daily. Quickly identifying if the packets being transferred from their laptops are malicious can help ensure a safer browsing experience for all Internet users.
+Nearly everyone uses the internet daily. Identifying if the packets being transferred from their laptops are malicious can help ensure a safer browsing experience for all Internet users.
 
 ---
 
@@ -115,6 +150,8 @@ The project follows these steps:
 #### Outline of Project
 
 [Link to Exploratory Data Analysis Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_eda.ipynb)
+
+[Link to Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb)
 
 [Link to Kaggle Dataset](https://www.kaggle.com/datasets/peterfriedrich1/dns-test-traffic-dohbrw2020?resource=download)
 
