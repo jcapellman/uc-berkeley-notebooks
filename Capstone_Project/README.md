@@ -25,12 +25,17 @@ The primary goal of this project is to classify TCP traffic as either malicious 
 
 ### Project Goals
 ---
-Classification Accuracy: Develop a machine learning model to classify TCP traffic with minimal false positives and negatives accurately.
-Model Generalization: Ensure that the model generalizes well to unseen data beyond the specific dataset used in this research.
-Data Analysis: Thoroughly investigate the dataset to prevent data leakage and ensure balanced performance across all classes.
-Computational Efficiency: Optimize the model’s computational efficiency in terms of training and inference time.
-Model Explainability: Enhance the interpretability of the model to understand its decision-making process.
-Continuous Evaluation: Plan for constant monitoring and re-evaluation of the model to account for data drifts over time.
+
+* Classification Accuracy: Develop a machine learning model to classify TCP traffic with minimal false positives and negatives accurately.
+
+* Model Generalization: Ensure that the model generalizes well to unseen data beyond the specific dataset used in this research.
+
+* Data Analysis: Thoroughly investigate the dataset to prevent data leakage and ensure balanced performance across all classes.
+
+* Computational Efficiency: Optimize the model’s computational efficiency in terms of training and inference time.
+
+* Model Explainability: Enhance the interpretability of the model to understand its decision-making process.
+* Continuous Evaluation: Plan for constant monitoring and re-evaluation of the model to account for data drifts over time.
 
 This project leverages a dataset titled "Secure DNS Test Traffic DoHBrw-2020" sourced from Kaggle. The dataset is large and diverse and requires extensive preprocessing, including outlier detection and handling of missing values, to ensure optimal performance. The final model aims to provide a robust solution for distinguishing between benign and malicious TCP traffic, contributing to safer internet usage.
 
