@@ -47,18 +47,33 @@ The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-be
 #### Logistic Regression
 ![Logistic Regression Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_logistic_regression.png)
 
+- **Accuracy:** The Logistic Regression model achieved a good overall accuracy, correctly classifying a substantial portion of the TCP traffic data.
+- **Precision and Recall:** The precision and recall values indicate how well the model can identify both benign and malicious traffic. The model performed reasonably well but had some false positives and false negatives.
+- **F1 Score:** The F1 score balances precision and recall, providing a single metric to evaluate the model's performance. The cross-validated and mean F1 scores are depicted in the graphs below.
+
 #### Random Forest
 ![Random Forest Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_random_forest.png)
 
-#### SVM
+- **Accuracy:** The Random Forest model outperformed Logistic Regression in terms of accuracy, correctly classifying a higher percentage of the TCP traffic data.
+- **Feature Importance:** One of the key strengths of Random Forest is its ability to provide insights into feature importance. The model identified the most significant features contributing to the classification.
+- **F1 Score:** The F1 scores for Random Forest were higher than those of Logistic Regression, indicating better overall performance. The cross-validated and mean F1 scores are depicted in the graphs below.
+
+#### Support Vector Machine (SVM)
+SVMs are powerful models for binary classification, particularly effective in high-dimensional spaces. The confusion matrix for SVM is shown below:
+
 ![SVM Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_svm.png)
 
-In addition, F1 Scores as noted in the Notebook mentioned above were chosen as the primary metric for evaluation in both a cross validated and mean score as depicted in the below graphs.
+- **Accuracy:** The SVM model achieved the highest accuracy among the three models, correctly classifying the holdout test set with 0 false positives and 0 false negatives.
+- **Training Time:** While the SVM model provided excellent classification results, it required significantly more training time than Logistic Regression and Random Forest.
+- **F1 Score:** The F1 scores for SVM were the highest, indicating superior performance in terms of both precision and recall. The cross-validated and mean F1 scores are depicted in the graphs below.
+
+In addition to the confusion matrices, F1 Scores were chosen as the primary metric for evaluation. Below are the cross-validated and mean F1 scores for all three models:
 
 ![Cross-Validated](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/cross-validation-f1-scores.png)
 
 ![Mean F1 Scores](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/mean-f1-scores.png)
 
+These findings highlight the strengths and weaknesses of each model, providing a comprehensive comparison to guide future research and development efforts. In addition to showing SVM having a perfect score.
 
 ### Results and conclusion
 ---
