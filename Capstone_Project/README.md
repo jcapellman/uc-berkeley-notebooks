@@ -3,12 +3,26 @@
 **Jarred Capellman**
 
 ---
+
+#### Table of Contents
+1. [Executive Summary](#executive-summary)
+2. [Project Goals](#project-goals)
+3. [Findings](#findings)
+4. [Results and Conclusion](#results-and-conclusion)
+5. [Future Research and Development](#future-research-and-development)
+6. [Rationale](#rationale)
+7. [Research Question](#research-question)
+8. [Data Sources](#data-sources)
+9. [Methodology](#methodology)
+10. [Next Steps](#next-steps)
+11. [Contact and Further Information](#contact-and-further-information)
+
 #### Executive summary
 **Project Overview:**
 ---
 The primary goal of this project is to classify TCP traffic as either malicious or benign by analyzing TCP traffic data collected from Google Chrome. This is achieved through the application of various machine learning models, including Logistic Regression, Random Forest, and Support Vector Machines (SVM).
 
-**Project Goals:**
+#### Project Goals
 ---
 Classification Accuracy: Develop a machine learning model to classify TCP traffic with minimal false positives and negatives accurately.
 Model Generalization: Ensure that the model generalizes well to unseen data beyond the specific dataset used in this research.
@@ -19,7 +33,7 @@ Continuous Evaluation: Plan for constant monitoring and re-evaluation of the mod
 
 This project leverages a dataset titled "Secure DNS Test Traffic DoHBrw-2020" sourced from Kaggle. The dataset is large and diverse and requires extensive preprocessing, including outlier detection and handling of missing values, to ensure optimal performance. The final model aims to provide a robust solution for distinguishing between benign and malicious TCP traffic, contributing to safer internet usage.
 
-**Findings:**
+#### Findings
 ---
 
 The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques; however, the Confusion Matrix shows how well each of the models performed for the summary findings.
@@ -34,13 +48,13 @@ The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-be
 ![SVM Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_svm.png)
 
 
-**Results and conclusion:**
+**Results and conclusion**
 ---
 
 As shown above, in the Confusion Matrix graphics, the SVM model correctly classified the holdout test set with 0 false positives and 0 false negatives. The model training time was about 2X the time, however the model performance which was the highest priority, SVM was the clear modelling choice.
 
 
-**Future research and development:**
+**Future research and development**
 ---
 1. **Validate Generalization**:
    Ensure the performance isn't specific to the current Kaggle dataset. Use additional testing on unseen data (e.g., another holdout set or external validation dataset) to confirm the model's ability to generalize.
