@@ -18,7 +18,7 @@
 11. [Contact and Further Information](#contact-and-further-information)
 
 #### Executive summary
-**Project Overview:**
+**Project Overview**
 ---
 The primary goal of this project is to classify TCP traffic as either malicious or benign by analyzing TCP traffic data collected from Google Chrome. This is achieved through the application of various machine learning models, including Logistic Regression, Random Forest, and Support Vector Machines (SVM).
 
