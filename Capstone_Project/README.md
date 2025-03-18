@@ -37,7 +37,7 @@ This project leverages a dataset titled "Secure DNS Test Traffic DoHBrw-2020" so
 ### Findings
 ---
 
-The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques; however, the Confusion Matrix shows how well each of the models performed for the summary findings.
+The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques; however, the Confusion Matrix shows how well each model performed for the summary findings.
 
 #### Logistic Regression
 ![Logistic Regression Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_logistic_regression.png)
@@ -47,6 +47,12 @@ The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-be
 
 #### SVM
 ![SVM Confusion Matrix](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/confusion_matrix_svm.png)
+
+In addition, F1 Scores as noted in the Notebook mentioned above were chosen as the primary metric for evaluation in both a cross validated and mean score as depicted in the below graphs.
+
+![Cross-Validated](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/cross-validation-f1-scores.png)
+
+![Mean F1 Scores](https://raw.githubusercontent.com/jcapellman/uc-berkeley-notebooks/main/Capstone_Project/images/mean-f1-scores.png)
 
 
 ### Results and conclusion
