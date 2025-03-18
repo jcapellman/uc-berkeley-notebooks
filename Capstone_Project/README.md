@@ -5,7 +5,7 @@
 ---
 
 #### Table of Contents
-1. [Executive Summary](#executive-summary)
+1. [Project Overview](#project-overview)
 2. [Project Goals](#project-goals)
 3. [Findings](#findings)
 4. [Results and Conclusion](#results-and-conclusion)
@@ -14,7 +14,8 @@
 7. [Research Question](#research-question)
 8. [Data Sources](#data-sources)
 9. [Methodology](#methodology)
-10. [Contact and Further Information](#contact-and-further-information)
+10. [Project Links](#project-links)
+11. [Contact and Further Information](#contact-and-further-information)
 
 #### Executive summary
 
