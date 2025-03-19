@@ -21,7 +21,7 @@
 
 ### Project Overview
 ---
-The primary goal of this project is to classify TCP traffic as either malicious or benign by analyzing TCP traffic data collected from Google Chrome. This is achieved through the application of various machine learning models, including Logistic Regression, Random Forest, and Support Vector Machines (SVM).
+The accurate classification of TCP traffic is crucial for enhancing cybersecurity measures. By identifying malicious traffic, businesses can prevent potential security breaches, protect sensitive data, and maintain the integrity of their network infrastructure. This project aims to develop a reliable model that can aid real-time traffic monitoring and threat detection, thereby contributing to a safer internet environment for all users.
 
 ### Project Goals
 ---
@@ -42,7 +42,42 @@ This project leverages a dataset titled "Secure DNS Test Traffic DoHBrw-2020" so
 ### Findings
 ---
 
-The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques; however, the Confusion Matrix shows how well each model performed for the summary findings.
+The [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb) analyzed the three modeling techniques.
+
+The summary of these findings:
+
+#### Logistic Regression
+- **Accuracy:** Achieved a good overall accuracy.
+- **Actionable Item:** Consider using Logistic Regression for quick and efficient initial classification.
+
+#### Random Forest
+- **Accuracy:** Outperformed Logistic Regression.
+- **Feature Importance:** Identified key features contributing to classification.
+- **Actionable Item:** Use Random Forest for more robust classification and feature insights.
+
+#### Support Vector Machine (SVM)
+- **Accuracy:** Achieved the highest accuracy with no false positives or negatives.
+- **Training Time:** Required more training time.
+- **Actionable Item:** Use SVM for the most accurate results, especially when training time is not a constraint.
+
+A more detailed analysis looking at the Confusion Matrix shows how well each model performed for the summary findings can be found in the [Model Training and Evaluation Notebook](https://github.com/jcapellman/uc-berkeley-notebooks/blob/main/Capstone_Project/CapstoneProject_Modeling_and_Evaluation.ipynb), however a brief visual breakdown can be found below.
+
+## Detailed Analysis
+---
+A brief description of the confusion matrix is as follows:
+
+- Top Left: True Positive (TP)
+- Top Right: False Negative (FN)
+- Bottom Left: False Positive (FP)
+- Bottom Right: True Negative (TN)
+
+Descriptions:
+- True Positive (TP): The number of correct predictions where the model predicted the positive class, and the actual class was also positive.
+- False Negative (FN): The number of incorrect predictions where the model predicted the negative class, but the actual class was positive.
+- False Positive (FP): The number of incorrect predictions where the model predicted the positive class, but the actual class was negative.
+- True Negative (TN): The number of correct predictions where the model predicted the negative class, and the actual class was also negative.
+
+Ideally, with model training, you would want 0 False Negatives and 0 False Negatives.
 
 #### Logistic Regression
 Logistic Regression is a simple yet effective model for binary classification tasks. The confusion matrix for Logistic Regression is shown below:
@@ -87,23 +122,20 @@ As shown above, in the Confusion Matrix graphics, the SVM model correctly classi
 
 ### Future research and development
 ---
-1. **Validate Generalization**:
-   Ensure the performance isn't specific to the current Kaggle dataset. Use additional testing on unseen data (e.g., another holdout set or external validation dataset) to confirm the model's ability to generalize.
-   - Consider cross-validation with more folds to robustly verify performance consistency across different subsets of the data as opposed to the 2 folds used in this research.
+1. **Validate Generalization:**
+   - Test the model on additional datasets to ensure its generalizability.
 
-2. **Analyze the Data**:
-   - Investigate the dataset to ensure no data leakage (e.g., features that unintentionally provide direct information about the target). Data leakage could artificially inflate performance.
-   - Identify class distributions and ensure the model performs equally well across all classes, especially if the dataset is imbalanced.
+2. **Analyze the Data:**
+   - Investigate the dataset for potential data leakage and ensure balanced class performance.
 
-3. **Measure Computational Efficiency**:
-   - Check the time and resource costs of training and inference. If the model is expensive to train or deploy, consider simplifying it by reducing the dimensionality (e.g., Principal Component Analysis, feature selection) or using a faster approximation model (like LinearSVC).
+3. **Measure Computational Efficiency:**
+   - Optimize the model to reduce training and inference times.
 
-4. **Explainability**:
-   - Since SVMs can sometimes be treated as a "black box," techniques to improve interpretability should be considered. For instance, look into the support vectors and weights of the model to understand which data points and features drive predictions.
+4. **Improve Explainability:**
+   - Enhance the interpretability of the SVM model.
 
-5. **Continuous Evaluation**:
-   - Plan for monitoring the model over time if used in production. Data drifts (changes in the underlying data distribution) could reduce accuracy, so consider creating a pipeline for periodic retraining and validation.
-
+5. **Continuous Evaluation:**
+   - Implement a pipeline for periodic retraining to account for data drifts.
 ---
 
 ### Rationale
